@@ -1,6 +1,7 @@
 #include "proxy.h"
 
 #include "proxy_iterator.h"
+#include "static_for.h"
 #include "value_wrapper.h"
 
 #include <stdexcept>

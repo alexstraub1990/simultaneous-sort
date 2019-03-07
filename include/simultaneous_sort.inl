@@ -4,8 +4,8 @@
 #include "static_for.h"
 
 #include <algorithm>
+#include <functional>
 #include <tuple>
-#include <utility>
 
 template <typename first_array_t, typename... array_ts>
 void sort(first_array_t& first_array, array_ts&... arrays)

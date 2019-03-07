@@ -63,8 +63,8 @@ inline bool value_wrapper<proxy_t>::operator<(const value_wrapper& other)
 
 namespace std
 {
-    template <template <typename> class wrapper_t, typename proxy_t>
-    inline void swap(wrapper_t<proxy_t> lhs, wrapper_t<proxy_t> rhs)
+    template <typename proxy_t>
+    inline void swap(value_wrapper<proxy_t> lhs, value_wrapper<proxy_t> rhs)
     {
         lhs = rhs;
     }

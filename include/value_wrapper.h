@@ -49,12 +49,13 @@ private:
     /// Proxy containing arrays
     proxy_t* proxy;
 };
+
 namespace std
 {
     /// <summary>
     /// Swap implementation for wrapper
     /// </summary>
-    template <template <typename> class wrapper_t, typename proxy_t>
-    void swap(wrapper_t<proxy_t> lhs, wrapper_t<proxy_t> rhs);
+    template <typename proxy_t>
+    void swap(value_wrapper<proxy_t> lhs, value_wrapper<proxy_t> rhs);
 }
 #include "value_wrapper.inl"
