@@ -33,4 +33,4 @@ Basically, there are two possibilities to use this library:
   - use the install mechanism and use CMake to include the library *simultaneous_sort*.
 
 ## Limitation
-This library needs C++17, as folding expressions are used. Furthermore, so far it has been only tested on Windows 10 with Visual Studio 2017.
+This library needs C++17, as folding expressions are used. Furthermore, so far it has been only tested on Windows 10 with Visual Studio 2017 and Ubuntu Linux with gcc 8.2.
