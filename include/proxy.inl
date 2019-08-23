@@ -11,11 +11,9 @@
 template <typename t, typename... ts>
 inline proxy<t, ts...>::proxy(std::tuple<t, ts...> arrays) : arrays(arrays), last_indices(std::make_pair<std::size_t, std::size_t>(0, 0))
 {
-    const std::size_t size = std::get<0>(this->arrays).get().size();
-
-    static_for<std::tuple_size<std::tuple<t, ts...>>::value>([&](auto tuple_index)
+    static_for<std::tuple_size<std::tuple<t, ts...>>::value>([this](auto tuple_index)
     {
-        if (std::get<tuple_index.value>(this->arrays).get().size() != size)
+        if (std::get<tuple_index.value>(this->arrays).get().size() != std::get<0>(this->arrays).get().size())
         {
             throw std::runtime_error("Arrays are of different size!");
         }
