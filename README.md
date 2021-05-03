@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/alexstraub1990/simultaneous-sort/badge)](https://www.codefactor.io/repository/github/alexstraub1990/simultaneous-sort)
+
 # Simultaneous Sort
 Small header-only library for providing the possibility to simultaneously sort multiple arrays, based on a comparator for the first one.
 
